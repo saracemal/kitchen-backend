@@ -14,6 +14,12 @@ class Api::V1::LikesController < ApplicationController
         render json: like
     end
 
+    def destroy
+        @like = Like.find(params[:id])
+        @like.destroy
+        render json: @like
+    end
+
 
     private
 
