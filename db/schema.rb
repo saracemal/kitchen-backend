@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(version: 2021_01_04_194033) do
   create_table "snacks", force: :cascade do |t|
     t.string "name"
     t.string "bio"
-    t.text "recipe", default: [], array: true
+    t.string "recipe", default: [], array: true
     t.string "image_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
